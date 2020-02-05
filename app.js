@@ -27,4 +27,12 @@ app.get('/product_info', (req,res)=>{
     })
 })
 
+app.post('/api/login', (req,res)=>{
+    console.log(req.post);
+    res.json({
+        'token': 'asd1234-token',
+        'UserData': 'Ah Kow'
+    })
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
